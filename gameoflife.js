@@ -71,7 +71,6 @@ Grid.prototype.UpdateAllStates = function ()
 	this.Show();
 }
 
- 
 Grid.prototype.UpdateCellState = function (r, c)
 {
 	var cell = this.grid[r][c];
