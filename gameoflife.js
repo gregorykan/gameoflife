@@ -114,10 +114,8 @@ Grid.prototype.CheckNeighbourCells = function (r, c)
 	}
 	return neighbourAliveCount;
 }
- 
- 
+
 var game = new Grid(40);
 setInterval(function(){
 	game.UpdateAllStates();
- 
 }, 30);
