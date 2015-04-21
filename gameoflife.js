@@ -120,4 +120,4 @@ var game = new Grid(40);
 setInterval(function(){
 	game.UpdateAllStates();
  
-}, 50);
+}, 30);
