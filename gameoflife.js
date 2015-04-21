@@ -4,10 +4,10 @@ function Cell ()
 	this.neighbours = 0;
 }
  
-function Grid () 
+function Grid (dimension) 
 {
 	this.grid = [];
-	this.PopulateGrid(40);
+	this.PopulateGrid(dimension);
 	this.direction = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]];
 }
  
@@ -44,7 +44,7 @@ Grid.prototype.Show = function ()
 		{
 			if (this.grid[i][j].alive === true)
 			{
-				rowString += "X|";
+				rowString += "0|";
 			}
 			else
 			{
@@ -116,7 +116,7 @@ Grid.prototype.CheckNeighbourCells = function (r, c)
 }
  
  
-var game = new Grid();
+var game = new Grid(40);
 setInterval(function(){
 	game.UpdateAllStates();
  
